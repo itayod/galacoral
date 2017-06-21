@@ -4,10 +4,12 @@
 import { combineReducers } from 'redux';
 import searchString  from './searchString';
 import trackList  from './trackList';
+import selectedTrack  from './selectedTrack';
 
 const rootReducers = combineReducers({
     searchString,
-    trackList
+    trackList,
+    selectedTrack
 });
 
 

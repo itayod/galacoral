@@ -7,10 +7,10 @@ import thunk from 'redux-thunk';
 
 import rootReducer from './reducers';
 
-
 import leftSide from './components/left-side/leftSide';
+import main from './components/main/main';
 
-angular.module('galacoral',[ngRedux,leftSide])
+angular.module('galacoral',[ngRedux,leftSide,main])
   .constant('clientId','ggX0UomnLs0VmW7qZnCzw')
   .config(($ngReduxProvider) => {
       var state = {

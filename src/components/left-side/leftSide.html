@@ -1,5 +1,5 @@
 <div id="left-side">
     <search search-string="leftSideCtrl.searchString" on-go-click="leftSideCtrl.goClicked(searchString)"></search>
-    <track-list track-list="leftSideCtrl.trackList.currentTracks"></track-list>
+    <track-list track-list="leftSideCtrl.trackList.currentTracks" on-track-click="leftSideCtrl.trackSelected(track)"></track-list>
     <next-button on-next-click="leftSideCtrl.nextClicked()"></next-button>
 </div>

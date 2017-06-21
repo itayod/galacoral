@@ -25,3 +25,10 @@ export function nextClicked() {
     };
 }
 
+export function trackSelected(track) {
+
+    return (dispatch,getState) => {
+        dispatch({type:actions.LEFT_SIDE_TRACK_SELECTED,track:track});
+    };
+}
+
