@@ -3,8 +3,10 @@
  */
 
 import LeftSideCtrl from './leftSideCtrl'
+import search from './search/search'
+import trackList from './track-list/trackList'
 
-export default angular.module('leftSide',[])
+export default angular.module('leftSide',[search,trackList])
     .directive('leftSide',() => {
         return {
             controller: LeftSideCtrl,

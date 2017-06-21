@@ -14,7 +14,7 @@ angular.module('galacoral',[ngRedux,leftSide])
   .constant('clientId','ggX0UomnLs0VmW7qZnCzw')
   .config(($ngReduxProvider) => {
       var state = {
-          counter: 1
+          searchString: 'pixis'
       };
 
       //Creates the Redux store, and allow connect() to access it.

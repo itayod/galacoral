@@ -1,14 +1,14 @@
 /**
  * Created by itay on 08/11/16.
  */
-import { combineReducers, applyMiddleware } from 'redux';
+import { combineReducers } from 'redux';
+import searchString  from './searchString';
+import trackList  from './trackList';
 
 const rootReducers = combineReducers({
-
-})
-// var rootReducers = reduceReducers(
-//   undoRedo,counter,stam
-// )
+    searchString,
+    trackList
+});
 
 
 export default rootReducers;
