@@ -9,8 +9,9 @@ import rootReducer from './reducers';
 
 import leftSide from './components/left-side/leftSide';
 import main from './components/main/main';
+import rightSide from './components/right-side/rightSide';
 
-angular.module('galacoral',[ngRedux,leftSide,main])
+angular.module('galacoral',[ngRedux,leftSide,main,rightSide])
   .constant('clientId','ggX0UomnLs0VmW7qZnCzw')
   .config(($ngReduxProvider) => {
       var state = {
@@ -24,12 +25,6 @@ angular.module('galacoral',[ngRedux,leftSide,main])
     SC.initialize({
       client_id: 'ggX0UomnLs0VmW7qZnCzw'
     })
-    SC.get('/tracks', {
-      q: 'streetlights'
-    }).then((tracks) => {
-
-      console.log('tracks',tracks);
-    });
   })
 
 

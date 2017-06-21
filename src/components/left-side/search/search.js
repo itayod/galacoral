@@ -7,7 +7,7 @@ export default angular.module('search',[])
         template: require('./search.html'),
         controllerAs: 'searchCtrl',
         bindings: {
-            searchString: '<',
+            searchString: '=',
             onGoClick: '&'
         }
 

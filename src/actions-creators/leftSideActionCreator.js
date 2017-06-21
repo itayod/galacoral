@@ -7,7 +7,7 @@ export function goClicked(searchString) {
 
     return (dispatch,getState) => {
 
-        dispatch({type:actions.LEFT_SIDE_GO_CLICKED});
+        dispatch({type:actions.LEFT_SIDE_GO_CLICKED,searchString:searchString});
 
         SC.get('/tracks', {
             q: searchString
@@ -29,6 +29,10 @@ export function trackSelected(track) {
 
     return (dispatch,getState) => {
         dispatch({type:actions.LEFT_SIDE_TRACK_SELECTED,track:track});
+
+        SC.oEmbed(track.uri).then(function(embed){
+            dispatch({type:actions.LEFT_SIDE_TRACK_EMBEDED, embed: embed});
+        });
     };
 }
 

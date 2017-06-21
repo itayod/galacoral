@@ -5,11 +5,13 @@ import { combineReducers } from 'redux';
 import searchString  from './searchString';
 import trackList  from './trackList';
 import selectedTrack  from './selectedTrack';
+import recentSearch  from './recentSearch';
 
 const rootReducers = combineReducers({
     searchString,
     trackList,
-    selectedTrack
+    selectedTrack,
+    recentSearch
 });
 
 
