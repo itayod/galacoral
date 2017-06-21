@@ -4,7 +4,7 @@
 import * as actions from './../actions/leftSideActions';
 
 export function goClicked(searchString) {
-    console.log('ahoy',searchString)
+
     return (dispatch,getState) => {
 
         dispatch({type:actions.LEFT_SIDE_GO_CLICKED});
@@ -17,3 +17,11 @@ export function goClicked(searchString) {
 
     };
 }
+
+export function nextClicked() {
+
+    return (dispatch,getState) => {
+        dispatch({type:actions.LEFT_SIDE_NEXT_BUTTON_CLICKED});
+    };
+}
+
