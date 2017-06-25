@@ -1,6 +1,6 @@
 <div id="right-side">
     <h3> Recent Searches: </h3>
-    <div class="recent-search-item" ng-repeat="recentSearch in rightSideCtrl.recentSearch">
+    <div class="recent-search-item" ng-repeat="recentSearch in rightSideCtrl.recentSearch track by $index">
         {{recentSearch}}
     </div>
 </div>

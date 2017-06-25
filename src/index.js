@@ -11,8 +11,10 @@ import leftSide from './components/left-side/leftSide';
 import main from './components/main/main';
 import rightSide from './components/right-side/rightSide';
 
+import {API_KEY} from './constants';
+
 angular.module('galacoral',[ngRedux,leftSide,main,rightSide])
-  .constant('clientId','ggX0UomnLs0VmW7qZnCzw')
+  .constant('clientId',API_KEY)
   .config(($ngReduxProvider) => {
       var state = {
           searchString: 'pixis'

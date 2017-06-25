@@ -1,5 +1,9 @@
 <div id="main">
     <div ng-if="mainCtrl.selectedTrack.embeddedTrack">
-        <image-display img-src="mainCtrl.selectedTrack.embeddedTrack.thumbnail_url" on-img-click="mainCtrl.imageClicked()"></image-display>
+        <image-display img-src="mainCtrl.selectedTrack.embeddedTrack.thumbnail_url" on-img-click="mainCtrl.displayEmbeddedTrack()"></image-display>
+    </div>
+    <div id="{{mainCtrl.embeddedTrackId}}"></div>
+    <div id="display-embedded-track">
+
     </div>
 </div>

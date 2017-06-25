@@ -11,6 +11,13 @@ export default class MainCtrl {
         $scope.$on('$destroy', unsubscribe);
     }
 
+    displayEmbeddedTrack() {
+        SC.oEmbed(this.selectedTrack.trackObj.uri, {
+            auto_play: true,
+            element: document.getElementById('display-embedded-track')
+        });
+    }
+
 
     // Which part of the Redux global state does our component want to receive?
     mapStateToThis(state) {
