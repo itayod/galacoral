@@ -1,0 +1,9 @@
+@import "./../../_mixin";
+
+div#main {
+  border: solid;
+  position: relative;
+  min-height: 100%;
+  float: left;
+  width: 44%;
+}

@@ -1,3 +1,5 @@
-<div ng-repeat="track in trackListCtrl.trackList">
-    <span ng-click="trackListCtrl.onTrackClick({track:track})">{{track.title}}</span>
+<div id="track-list">
+    <div ng-repeat="track in trackListCtrl.trackList" class="track-list-item">
+        <span ng-click="trackListCtrl.onTrackClick({track:track})">{{track.title}}</span>
+    </div>
 </div>

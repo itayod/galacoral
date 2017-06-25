@@ -1,11 +1,12 @@
 /**
  * Created by itay on 19/06/17.
  */
+import './leftSide.scss';
 
-import LeftSideCtrl from './leftSideController'
-import search from './search/search'
-import trackList from './track-list/trackList'
-import nextButton from './next-button/nextButton'
+import LeftSideCtrl from './leftSideController';
+import search from './search/search';
+import trackList from './track-list/trackList';
+import nextButton from './next-button/nextButton';
 
 export default angular.module('leftSide',[search,trackList,nextButton])
     .directive('leftSide',() => {

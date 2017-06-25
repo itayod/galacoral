@@ -1,6 +1,7 @@
 /**
  * Created by itay on 19/06/17.
  */
+require('./main.scss');
 
 import MainCtrl from './mainController'
 import imageDisplay from './image-display/imageDisplay'

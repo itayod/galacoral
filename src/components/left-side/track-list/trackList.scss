@@ -1,0 +1,9 @@
+@import "./../../../_mixin";
+
+#track-list {
+  .track-list-item {
+    cursor: pointer;
+    padding: $smallPadding;
+    padding-left: $mediumPadding;
+  }
+}

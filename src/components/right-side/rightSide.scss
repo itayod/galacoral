@@ -1,0 +1,11 @@
+@import "./../../_mixin";
+
+div#right-side {
+  border: solid;
+  float: left;
+  height: 100%;
+  width: 20%;
+  padding-left: $smallPadding;
+  margin-left: 4%;
+  margin-right: 3%;
+}
